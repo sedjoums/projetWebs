@@ -1,0 +1,198 @@
+/* Reset et base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
+  color: #f1f1f1;
+  line-height: 1.6;
+}
+
+/* Conteneur central */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero h1{
+  margin-top: 2em;
+}
+
+/* Header */
+.header {
+  background-color: #1f1f1f;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fefefe;
+  letter-spacing: 1px;
+}
+
+.alert-icon {
+  color: #e63946;
+}
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.nav-links a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background-color: #2a2a2a;
+  transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #444;
+}
+
+/* Section principale */
+.hero {
+  padding: 150px 0 80px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #cfcfcf;
+  margin-bottom: 40px;
+}
+
+/* Groupe de boutons */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+/* Boutons professionnels */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.btn.red {
+  background-color: #e63946;
+  color: #fff;
+}
+.btn.red:hover {
+  background-color: #c62838;
+}
+
+.btn.green {
+  background-color: #2a9d8f;
+  color: #fff;
+}
+.btn.green:hover {
+  background-color: #1e7f71;
+}
+
+.btn.blue {
+  background-color: #457b9d;
+  color: #fff;
+}
+.btn.blue:hover {
+  background-color: #346073;
+}
+
+.btn.yellow {
+  background-color: #f4a261;
+  color: #1b1b1b;
+}
+.btn.yellow:hover {
+  background-color: #e07b36;
+  color: #fff;
+}
+
+/* Section à propos */
+.about p {
+  font-size: 14px;
+  color: #aaa;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Footer personnalisé */
+.footer {
+  background-color: #1f1f1f;
+  text-align: center;
+  padding: 15px;
+  color: #888;
+  font-size: 13.5px;
+  border-top: 1px solid #333;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+  .header-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .button-group {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    width: auto;
+    margin: 5px;
+  }
+}

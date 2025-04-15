@@ -1,0 +1,156 @@
+/* Réinitialisation & base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px 10px;
+}
+
+/* Barre de navigation */
+.navbar {
+    margin-top: -25px;
+    width: 100vw;
+    background-color: #1f1f1f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+#navbar{
+    padding: 20px;
+    width: 100vw;
+    color: #888;
+    background: #1f1f1f;
+    position: absolute;
+    bottom: -500px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar span {
+    text-decoration: underline;
+}
+
+/* Conteneur du formulaire */
+.form-container {
+    background: grey;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 0.8s ease;
+    margin: 30px 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e3a5f;
+    font-size: 22px;
+}
+
+/* Champs */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Bouton */
+button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .navbar {
+        align-items: flex-start;
+    }
+
+    .navbar span {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire de Candidature - Hysacam</title>
+    <link rel="stylesheet" href="form.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div>
+            <a href="index.html">&#x25C0; Retour</a>
+        </div>
+        <div>
+            <h4><span>Exercer Chez HysaCam</span></h4>
+        </div>
+    </nav>
+
+    <!-- Conteneur du formulaire -->
+    <div class="form-container">
+        <h2>Postulez dès maintenant</h2>
+        <form id="candidatureForm">
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required />
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required />
+            </div>
+            <div class="form-group">
+                <label for="date-naissance">Date de naissance :</label>
+                <input type="date" id="date-naissance" name="date_naissance" required />
+            </div>
+            <div class="form-group">
+                <label for="adresse">Adresse :</label>
+                <input type="text" id="adresse" name="adresse" placeholder="Votre adresse actuelle" required />
+            </div>
+            <div class="form-group">
+                <label for="telephone">Téléphone :</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="ex : 6 90 00 00 00" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="ex : nom@email.com" required />
+            </div>
+            <div class="form-group">
+                <label for="ville">Ville :</label>
+                <input type="text" id="ville" name="ville" placeholder="ex : Yaoundé" required />
+            </div>
+            <div class="form-group">
+                <label for="poste">Poste souhaité :</label>
+                <select id="poste" name="poste" required>
+                    <option value="">-- Sélectionnez un poste --</option>
+                    <option value="Conducteur de camion">Conducteur de camion</option>
+                    <option value="Agent de collecte">Agent de collecte</option>
+                    <option value="Technicien en gestion des déchets">Technicien en gestion des déchets</option>
+                    <option value="Autre">Autre</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="formation">Niveau d'étude :</label>
+                <select id="formation" name="formation" required>
+                    <option value="">-- Sélectionnez un niveau --</option>
+                    <option value="Bac">Bac</option>
+                    <option value="Bac+2">Bac+2</option>
+                    <option value="Bac+5">Bac+5</option>
+                    <option value="Autre">Autre</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="experience">Expérience :</label>
+                <textarea id="experience" name="experience" placeholder="Décrivez brièvement votre expérience..." rows="4" required></textarea>
+            </div>
+            <button type="submit">Soumettre</button>
+        </form>
+    </div>
+
+    <!-- Pied de page -->
+    <nav id="navbar">
+        <span style="text-align: center; text-decoration: none;">
+            <p>© 2025 HysaSign - Tous droits réservés.</p>
+            <p><a href="https://www.hysacam-proprete.com/" target="_blank" style="text-decoration: underline; color: #fff;">Voir le site de Hysacam</a> | Conçu avec passion pour un avenir propre.</p>
+        </span>
+    </nav>
+
+    <script src="form.js"></script>
+</body>
+</html>

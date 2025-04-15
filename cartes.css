@@ -1,0 +1,100 @@
+:root {
+      --primary-color: #1f1f1f;
+      --secondary-color: #2a2a2a;
+      --accent-color: #ff9800;
+      --text-color: #ffffff;
+      --btn-green: #4caf50;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--primary-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--secondary-color);
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    header a {
+      text-decoration: none;
+      color: var(--accent-color);
+      font-weight: bold;
+      background: transparent;
+      border: 2px solid var(--accent-color);
+      padding: 5px 10px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    header a:hover {
+      background: var(--accent-color);
+      color: var(--primary-color);
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    #carte {
+      height: 350px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    .btn {
+      padding: 8px 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: background 0.3s;
+    }
+
+    .btn-reperer {
+      background-color: var(--accent-color);
+      color: white;
+    }
+
+.bton{
+      display: flex;
+}
+
+    .btn-reperer:hover {
+      background-color: #e68900;
+    }
+
+    .btn-envoyer {
+      background-color: var(--btn-green);
+      color: white;
+    }
+
+    .btn-envoyer:hover {
+      background-color: #3e8e41;
+    }
+
+    footer {
+      background-color: var(--secondary-color);
+      color: #aaa;
+      text-align: center;
+      padding: 1px 0;
+      margin-top: 40px;
+          margin-bottom: 0;
+          position: absolute;
+          width: 100vw;
+      font-size: 0.9rem;
+    }

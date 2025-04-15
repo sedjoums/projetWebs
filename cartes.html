@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Carte - HysaSign</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="cartes.css">
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>HysaSign - Signalement</h1>
+    <a href="index.html">← Retour</a>
+  </header>
+
+  <div class="container">
+    <p style="text-align: center;">Localisez-vous et envoyez très rapidement un signalement ..</p>
+    <div id="carte"></div>
+    <div class="bton">
+      <button class="btn btn-reperer">📍 Repérer ma position</button>
+      <button class="btn btn-envoyer">✉️ Envoyer le signalement</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      &copy; 2025 HysaSign - Tous droits réservés<br> <a>Voir le site de Hysacam</a> | Conçu avec passion <br>pour un avenir propre.
+    </p>
+  </footer>
+  
+  <script src="cartes.js"></script>
+</body>
+</html>
